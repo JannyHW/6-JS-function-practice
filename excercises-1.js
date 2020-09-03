@@ -34,9 +34,9 @@ function sum(a, b) {
   return a + b;
 }
 
-console.log(sum(2, 4));
-console.log(sum(45, 23));
-console.log(sum(-2, -57));
+console.assert(sum(2, 4));
+console.assert(sum(45, 23));
+console.assert(sum(-2, -57));
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
@@ -45,9 +45,9 @@ function avg(a, b, c) {
   return (a + b + c) / 3;
 }
 
-console.log(avg(2, 3, 4));
-console.log(avg(234, 63, 234));
-console.log(avg(123, 234, 345));
+console.assert(avg(2, 3, 4));
+console.assert(avg(234, 63, 234));
+console.assert(avg(123, 234, 345));
 
 // Q3
 // Write a function called `getLength` that takes one
@@ -57,9 +57,9 @@ function getLength(string) {
   return string.length;
 }
 
-console.log(getLength("Michael"));
-console.log(getLength("Javascript"));
-console.log(getLength("supercalifragilisticexpialidocious"));
+console.assert(getLength("Michael"));
+console.assert(getLength("Javascript"));
+console.assert(getLength("supercalifragilisticexpialidocious"));
 
 // Q4
 // Write a function called `greaterThan` that takes
@@ -71,9 +71,9 @@ function greaterThan(a, b) {
   return a > b;
 }
 
-console.log(greaterThan(2, 1));
-console.log(greaterThan(23, 23));
-console.log(greaterThan(-234, 1));
+console.assert(greaterThan(2, 1));
+console.assert(greaterThan(23, 23));
+console.assert(greaterThan(-234, 1));
 
 // Q5
 // Write a function called `greet` that takes a
@@ -82,12 +82,12 @@ console.log(greaterThan(-234, 1));
 // is the parameter that was passed in.
 
 function greet(name) {
-  console.log("Hello, " + name + "!");
+  console.assert("Hello, " + name + "!");
 }
 
-console.log(greet("Michael"));
-console.log(greet("R2D2"));
-console.log(greet("Iron Man"));
+console.assert(greet("Michael"));
+console.assert(greet("R2D2"));
+console.assert(greet("Iron Man"));
 
 // Q6
 // Write a function called `madlib` that takes
@@ -101,10 +101,9 @@ console.log(greet("Iron Man"));
 // sentence: "quick brown fox jumps over the fence"
 
 function madlib(a, b, c, d) {
-  return "The  " + a + "  brown  " + b + "  " + c + " over " + " the " + d + " .";
+  return `The ${a} brown ${b} ${c} over the ${d}.   `;
 }
-
-console.log(madlib("quick", "fox", "jumps", "fence"));
-console.log(madlib("fat", "rabbit", "hops", "wall"));
+console.assert(madlib("quick", "fox", "jumps", "fence"));
+console.assert(madlib("fat", "rabbit", "hops", "wall"));
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
