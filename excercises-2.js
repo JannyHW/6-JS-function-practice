@@ -43,18 +43,7 @@ console.assert(maxOfThree(-12, 4, -5));
 // ---------------------
 
 function isVowel(key) {
-  if (
-    key === "a" ||
-    key === "e" ||
-    key === "i" ||
-    key === "o" ||
-    key === "u" ||
-    key === "A" ||
-    key === "E" ||
-    key === "I" ||
-    key === "O" ||
-    key === "U"
-  ) {
+  if (key == "aeiou") {
     return true;
   } else {
     return false;
